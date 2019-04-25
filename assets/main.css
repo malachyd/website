@@ -82,11 +82,11 @@ a {
     color: #1756a9; }
   a:hover {
     color: #111;
-    text-decoration: underline; }
+    text-decoration: none; }
   .social-media-list a:hover {
     text-decoration: none; }
     .social-media-list a:hover .username {
-      text-decoration: underline; }
+      text-decoration: none; }
 
 /**
  * Blockquotes
@@ -189,7 +189,8 @@ table {
   border-top: 5px solid #424242;
   border-bottom: 1px solid #e8e8e8;
   min-height: 55.95px;
-  position: relative; }
+  position: relative;
+  text-decoration: none; }
 
 .site-title {
   font-size: 26px;
@@ -197,7 +198,8 @@ table {
   line-height: 54px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left; }
+  float: left;
+  text-decoration: none; }
   .site-title, .site-title:visited {
     color: #424242; }
 
