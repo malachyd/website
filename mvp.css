@@ -37,8 +37,8 @@
 
 /* Layout */
 article aside {
-    background: var(--color-secondary-accent);
-    border-left: 4px solid var(--color-secondary);
+    background: var(--color-accent);
+    border-left: 4px solid var(--color-bg);
     padding: 0.01rem 0.8rem;
 }
 
@@ -61,7 +61,7 @@ main {
 }
 
 hr {
-    background-color: var(--color-bg-secondary);
+    background-color: var(--color-bg);
     border: none;
     height: 1px;
     margin: 4rem 0;
@@ -74,7 +74,7 @@ section {
 }
 
 section aside {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 1rem;
@@ -83,7 +83,7 @@ section aside {
 }
 
 section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
+    box-shadow: var(--box-shadow) var(--color-bg);
 }
 
 section aside img {
@@ -183,11 +183,11 @@ samp {
 }
 
 small {
-    color: var(--color-text-secondary);
+    color: var(--color-text);
 }
 
 sup {
-    background-color: var(--color-secondary);
+    background-color: var(--color);
     border-radius: var(--border-radius);
     color: var(--color-bg);
     font-size: xx-small;
@@ -200,7 +200,7 @@ sup {
 
 /* Links */
 a {
-    color: var(--color-secondary);
+    color: var(--color);
     font-weight: bold;
     text-decoration: none;
 }
@@ -252,12 +252,12 @@ figure {
 }
 
 figure figcaption {
-    color: var(--color-text-secondary);
+    color: var(--color-text);
 }
 
 /* Forms */
 form {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-bg);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     display: block;
@@ -289,7 +289,7 @@ textarea {
 
 input,
 textarea {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-bg);
     border-radius: var(--border-radius);
     padding: 0.4rem 0.8rem;
 }
@@ -301,7 +301,7 @@ label {
 
 /* Tables */
 table {
-    border: 1px solid var(--color-bg-secondary);
+    border: 1px solid var(--color-bg);
     border-radius: var(--border-radius);
     border-spacing: 0;
     display: block;
@@ -351,7 +351,7 @@ blockquote {
 }
 
 blockquote footer {
-    color: var(--color-text-secondary);
+    color: var(--color-text);
     display: block;
     font-size: small;
     line-height: var(--line-height);
