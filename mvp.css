@@ -1,4 +1,4 @@
-/* MVP.css v1.0.1 - by Andy Brewer */
+/* MVP.css v1.1 - https://github.com/andybrewer/mvp */
 
 :root {
     --border-radius: 5px;
@@ -22,23 +22,26 @@
     --width-content: 1080px;
 }
 
-@media (prefers-color-scheme: light) {
+/*
+@media (prefers-color-scheme: dark) {
     :root {
-        --color-accent: #118aee7f;
-        --color-bg: #333333;
+        --color: #0097fc;
+        --color-accent: #0097fc4f;
+        --color-bg: #333;
         --color-bg-secondary: #555;
-        --color-secondary: #6df216;
-        --color-secondary-accent: #6df2167f;
+        --color-secondary: #e20de9;
+        --color-secondary-accent: #e20de94f;
         --color-shadow: #bbbbbb20;
-        --color-text: #fff;
-        --color-text-secondary: #666;
+        --color-text: #f7f7f7;
+        --color-text-secondary: #aaa;
     }
 }
+*/
 
 /* Layout */
 article aside {
-    background: var(--color-accent);
-    border-left: 4px solid var(--color-bg);
+    background: var(--color-secondary-accent);
+    border-left: 4px solid var(--color-secondary);
     padding: 0.01rem 0.8rem;
 }
 
@@ -61,7 +64,7 @@ main {
 }
 
 hr {
-    background-color: var(--color-bg);
+    background-color: var(--color-bg-secondary);
     border: none;
     height: 1px;
     margin: 4rem 0;
@@ -74,7 +77,7 @@ section {
 }
 
 section aside {
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     margin: 1rem;
@@ -83,7 +86,7 @@ section aside {
 }
 
 section aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg);
+    box-shadow: var(--box-shadow) var(--color-bg-secondary);
 }
 
 section aside img {
@@ -138,18 +141,27 @@ nav ul li {
 }
 
 /* Typography */
-code {
-    display: inline-block;
-    margin: 0 0.1rem;
-    padding: 0rem 0.5rem;
-}
-
 code,
 samp {
     background-color: var(--color-accent);
-    color: var(--color-text);
     border-radius: var(--border-radius);
+    color: var(--color-text);
+    display: inline-block;
+    margin: 0 0.1rem;
+    padding: 0rem 0.5rem;
     text-align: var(--justify-normal);
+}
+
+details {
+    margin: 1.3rem 0;
+}
+
+details summary {
+    font-weight: bold;
+}
+
+details summary:focus {
+    outline: none;
 }
 
 h1,
@@ -175,7 +187,12 @@ p {
     padding: 0;
 }
 
-samp {
+pre {
+    white-space: normal;
+}
+
+pre code,
+pre samp {
     display: block;
     margin: 1rem 0;
     max-width: var(--width-card-wide);
@@ -183,11 +200,11 @@ samp {
 }
 
 small {
-    color: var(--color-text);
+    color: var(--color-text-secondary);
 }
 
 sup {
-    background-color: var(--color);
+    background-color: var(--color-secondary);
     border-radius: var(--border-radius);
     color: var(--color-bg);
     font-size: xx-small;
@@ -200,7 +217,7 @@ sup {
 
 /* Links */
 a {
-    color: var(--color);
+    color: var(--color-secondary);
     font-weight: bold;
     text-decoration: none;
 }
@@ -251,13 +268,17 @@ figure {
     padding: 0;
 }
 
+figure img {
+    max-width: 100%;
+}
+
 figure figcaption {
-    color: var(--color-text);
+    color: var(--color-text-secondary);
 }
 
 /* Forms */
 form {
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow) var(--color-shadow);
     display: block;
@@ -284,13 +305,9 @@ textarea {
 input,
 select,
 textarea {
-    margin-bottom: 1rem;
-}
-
-input,
-textarea {
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
+    margin-bottom: 1rem;
     padding: 0.4rem 0.8rem;
 }
 
@@ -299,12 +316,18 @@ label {
     margin-bottom: 0.2rem;
 }
 
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+}
+
 /* Tables */
 table {
-    border: 1px solid var(--color-bg);
+    border: 1px solid var(--color-bg-secondary);
     border-radius: var(--border-radius);
     border-spacing: 0;
-    display: block;
     overflow-x: scroll;
     overflow-y: hidden;
     padding: 0;
@@ -351,7 +374,7 @@ blockquote {
 }
 
 blockquote footer {
-    color: var(--color-text);
+    color: var(--color-text-secondary);
     display: block;
     font-size: small;
     line-height: var(--line-height);
