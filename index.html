@@ -8,24 +8,12 @@
     <meta name="Malachy Donovan" content="Malachy Donovan's website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malachy Donovan</title>
+    <script async src="script.js"></script>
+    <script defer src="script.js"></script>
 </head>
 
 <body onload="dotFunction()">
 <div class = a> <p id="demo"></p></div>
-<script>
-var i = 0;
-var txt = '...';
-var speed = 1000;
-var count = 0;
-
-function dotFunction() {
-
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(dotFunction, speed);
-  }
-}
-</script>
+<div class = b> <p id="clicktime"></p></div>
 
 </body>
