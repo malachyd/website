@@ -8,6 +8,7 @@ div.a {
   transform: translate(-50%, -50%);
   width: 100%;
   overflow-wrap: break-word;
+
 }
 
 div.b {
@@ -16,6 +17,35 @@ div.b {
   text-align: center;
   position: fixed;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* margin-left: 50px;
+  margin-right: 50px; */
+  width: 80%;
+  overflow-wrap: break-word;
+}
+
+div.c {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 200%;
+  font-weight: lighter;
+  text-align: center;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+/* margin-left: 50px;
+  margin-right: 50px; */
+  width: 100%;
+  overflow-wrap: break-word;
+
+}
+
+div.d {
+  font-size: 300%;
+  text-align: center;
+  position: fixed;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 /* margin-left: 50px;

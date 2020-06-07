@@ -13,6 +13,10 @@ var namespace = ' ';
 var last = 'DONOVAN';
 var speed3 = 10;
 var nomoresurprises = false;
+var welcomed = false;
+var a = 0;
+var hello = 'welcome to';
+var boomemoji = "💥";
 
 function mainName (){
   if (z < first.length) {
@@ -20,22 +24,29 @@ function mainName (){
     z++;
     setTimeout(mainName, speed3);
   }
-/*  if (nomoresurprises == false) {
-  setTimeout(clearName, 5000);
-} else {
-  setTimeout(realAnagramTime, 5000);
-}*/
+  welcomeTo();
+}
+function welcomeTo(){
+  if (a < hello.length) {
+    document.getElementById("welcome").innerHTML += hello.charAt(a);
+    a++;
+    setTimeout(welcomeTo, 100000);
+  }
+  welcomed = true;
+  boom();
+}
+
+function boom(){
+  document.getElementById("emoji").innerHTML = boomemoji;
 }
 
 document.addEventListener("click",
 function clickEffectDots()
 {
     clicked = true
-    /*var full_del = txt.replace('...','');
-    document.getElementById("demo").innerHTML = full_del;
-    var full_del2 = txt2.replace('well... what are you waiting for?','');
-    document.getElementById("demo").innerHTML = full_del2;
-    mainName();*/
+/*  if (welcomed == false){
+    welcomeTo();
+  }*/
 });
 
 function clearTextTwo(){
@@ -121,6 +132,19 @@ first = anagrams[0];
     w++;
     setTimeout(realAnagramTime, 30);
   }
+}
+
+function getRandomColor() {
+  var letters = '0123456789ABCDEF';
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+
+function setRandomColor() {
+  $("#a").css("color", getRandomColor());
 }
 
 /*function clearAnagram() {
