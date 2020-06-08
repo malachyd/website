@@ -13,14 +13,12 @@ div.a {
 
 div.b {
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 500%;
+  font-size: 400%;
   text-align: center;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-/* margin-left: 50px;
-  margin-right: 50px; */
   width: 80%;
   overflow-wrap: break-word;
 }
@@ -34,8 +32,6 @@ div.c {
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
-/* margin-left: 50px;
-  margin-right: 50px; */
   width: 100%;
   overflow-wrap: break-word;
 
@@ -48,8 +44,16 @@ div.d {
   top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-/* margin-left: 50px;
-  margin-right: 50px; */
   width: 100%;
   overflow-wrap: break-word;
+}
+
+div.weird{
+  font-family:'Varela Round', sans-serif;
+  color: rgba(214, 211, 211, 1);
+  font-size: 400%;
+  top: 73%;
+  left: 80%;
+  width: 80%;
+  position: fixed;
 }

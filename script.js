@@ -17,6 +17,7 @@ var welcomed = false;
 var a = 0;
 var hello = 'welcome to';
 var boomemoji = "💥";
+var counter = 0;
 
 function mainName (){
   if (z < first.length) {
@@ -117,12 +118,34 @@ function shuffle(array) {
 }
 
 function clearName(){
+if (counter < 5){
   w = 0;
   var full_del3 = first.replace(first,'');
   document.getElementById("clicktime").innerHTML = full_del3;
+  if (counter == 0){
+  document.getElementById("counting").innerHTML = "1/5";
+  }
+  if (counter == 1){
+  document.getElementById("counting").innerHTML = "2/5";
+  }
+  if (counter == 2){
+  document.getElementById("counting").innerHTML = "3/5";
+  }
+  if (counter == 3){
+  document.getElementById("counting").innerHTML = "4/5";
+  }
+  if (counter == 4){
+  document.getElementById("counting").innerHTML = "5/5";
+  }
+
   shuffle(anagrams);
   realAnagramTime();
-  //setTimeout(anagramTime, 10000);
+
+}
+else {
+  alert('more than 5');
+}
+counter++;
 }
 
 function realAnagramTime() {
