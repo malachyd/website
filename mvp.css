@@ -14,8 +14,8 @@ div.a {
 div.b {
   font-family: 'IBM Plex Mono', monospace;
   /*font-size: 400%;*/
-  font-size: calc(25px + (100 - 60) * ((100vw - 300px) / (1600 - 300)));
-  line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
   text-align: center;
   position: fixed;
   top: 50%;
