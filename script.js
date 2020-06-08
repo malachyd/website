@@ -154,6 +154,7 @@ function twitter(){
   document.getElementById("emoji").innerHTML = full_del3;
   document.getElementById("clicktime").innerHTML = full_del3;
   document.getElementById("welcome").innerHTML = full_del3;
+  document.getElementById("counting").innerHTML = '➡️';
   var full_del4 = first.replace(first,'');
   document.getElementById("clicktime").innerHTML = "Those were a few anagrams.. nice. Here's my twitter.";
   document.getElementById("emoji").innerHTML = twitter_bird;

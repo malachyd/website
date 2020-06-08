@@ -40,7 +40,8 @@ div.c {
 }
 
 div.d {
-  font-size: 300%;
+/*  font-size: 300%;*/
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
   top: 85%;
@@ -52,8 +53,9 @@ div.d {
 
 div.weird{
   font-family:'Varela Round', sans-serif;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   color: rgba(214, 211, 211, 1);
-  font-size: 400%;
+/*  font-size: 400%;*/
   top: 73%;
   left: 80%;
   width: 80%;
