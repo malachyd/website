@@ -18,6 +18,7 @@ var a = 0;
 var hello = 'welcome to';
 var boomemoji = "💥";
 var counter = 0;
+var twitter_bird = "🐦";
 
 function mainName (){
   if (z < first.length) {
@@ -143,9 +144,19 @@ if (counter < 5){
 
 }
 else {
-  alert('more than 5');
+  twitter();
 }
 counter++;
+}
+
+function twitter(){
+  var full_del3 = first.replace(first,'');
+  document.getElementById("emoji").innerHTML = full_del3;
+  document.getElementById("clicktime").innerHTML = full_del3;
+  document.getElementById("welcome").innerHTML = full_del3;
+  var full_del4 = first.replace(first,'');
+  document.getElementById("clicktime").innerHTML = "Those were a few anagrams.. nice. Here's my twitter.";
+  document.getElementById("emoji").innerHTML = twitter_bird;
 }
 
 function realAnagramTime() {

@@ -56,4 +56,5 @@ div.weird{
   left: 80%;
   width: 80%;
   position: fixed;
+  transform: translate(-10%, -5%);
 }
