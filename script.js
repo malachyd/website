@@ -37,6 +37,9 @@ function welcomeTo(){
   welcomed = true;
   boom();
   tweet();
+  email();
+  linkedin();
+  projects();
 }
 
 function boom(){
@@ -45,6 +48,18 @@ function boom(){
 
 function tweet(){
   document.getElementById("tweet_emoji").innerHTML = "🐦";
+}
+
+function email(){
+  document.getElementById("email_emoji").innerHTML = "📬";
+}
+
+function linkedin(){
+  document.getElementById("link").innerHTML = "💼";
+}
+
+function projects(){
+  document.getElementById("light_emoji").innerHTML = "💡";
 }
 
 document.addEventListener("click",

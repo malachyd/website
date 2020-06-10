@@ -75,6 +75,38 @@ div.d {
   }
 }
 
+@keyframes mailmove {
+  0% {
+    top: 50%;
+    left: 50%
+  }
+  100% {
+    top: 70%;
+    left: 50%;
+  }
+}
+
+@keyframes linkedinmove {
+  0% {
+    top: 50%;
+    left: 50%
+  }
+  100% {
+    top: 10%;
+    left: 20%;
+  }
+}
+@keyframes lightmove {
+  0% {
+    top: 50%;
+    left: 50%
+  }
+  100% {
+    top: 10%;
+    left: 80%;
+  }
+}
+
 div.d2 {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
@@ -89,6 +121,52 @@ div.d2 {
   width: 100%;*/
   overflow-wrap: break-word;
 }
+
+div.d3 {
+/*  font-size: 300%; */
+/*  transform-origin:  50px 50px;
+  transform: translate(2,1); */
+  animation: mailmove 3s forwards;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  text-align: center;
+  position: fixed;
+/*  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;*/
+  overflow-wrap: break-word;
+}
+
+div.linked {
+/*  font-size: 300%; */
+/*  transform-origin:  50px 50px;
+  transform: translate(2,1); */
+  animation: linkedinmove 3s forwards;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  text-align: center;
+  position: fixed;
+/*  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;*/
+  overflow-wrap: break-word;
+}
+
+div.d4 {
+/*  font-size: 300%; */
+/*  transform-origin:  50px 50px;
+  transform: translate(2,1); */
+  animation: lightmove 3s forwards;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  text-align: center;
+  position: fixed;
+/*  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;*/
+  overflow-wrap: break-word;
+}
+
 
 div.weird{
   font-family:'Varela Round', sans-serif;
