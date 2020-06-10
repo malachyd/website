@@ -36,19 +36,21 @@ function welcomeTo(){
   }
   welcomed = true;
   boom();
+  tweet();
 }
 
 function boom(){
   document.getElementById("emoji").innerHTML = boomemoji;
 }
 
+function tweet(){
+  document.getElementById("tweet_emoji").innerHTML = "🐦";
+}
+
 document.addEventListener("click",
 function clickEffectDots()
 {
-    clicked = true
-/*  if (welcomed == false){
-    welcomeTo();
-  }*/
+    clicked = true;
 });
 
 function clearTextTwo(){
@@ -119,34 +121,11 @@ function shuffle(array) {
 }
 
 function clearName(){
-if (counter < 5){
   w = 0;
   var full_del3 = first.replace(first,'');
   document.getElementById("clicktime").innerHTML = full_del3;
-  if (counter == 0){
-  document.getElementById("counting").innerHTML = "1/5";
-  }
-  if (counter == 1){
-  document.getElementById("counting").innerHTML = "2/5";
-  }
-  if (counter == 2){
-  document.getElementById("counting").innerHTML = "3/5";
-  }
-  if (counter == 3){
-  document.getElementById("counting").innerHTML = "4/5";
-  }
-  if (counter == 4){
-  document.getElementById("counting").innerHTML = "5/5";
-  }
-
   shuffle(anagrams);
   realAnagramTime();
-
-}
-else {
-  twitter();
-}
-counter++;
 }
 
 function twitter(){
@@ -157,7 +136,7 @@ function twitter(){
   document.getElementById("counting").innerHTML = '➡️';
   var full_del4 = first.replace(first,'');
   document.getElementById("clicktime").innerHTML = "Those were a few anagrams.. nice. Here's my twitter.";
-  document.getElementById("emoji").innerHTML = twitter_bird;
+  document.getElementById("emoji").href = "https://twitter.com/malachydonovan";
 }
 
 function realAnagramTime() {
@@ -168,23 +147,3 @@ first = anagrams[0];
     setTimeout(realAnagramTime, 30);
   }
 }
-
-function getRandomColor() {
-  var letters = '0123456789ABCDEF';
-  var color = '#';
-  for (var i = 0; i < 6; i++) {
-    color += letters[Math.floor(Math.random() * 16)];
-  }
-  return color;
-}
-
-function setRandomColor() {
-  $("#a").css("color", getRandomColor());
-}
-
-/*function clearAnagram() {
-  var delAnagram = first.replace(anagrams[0],'');
-  document.getElementById("demo").innerHTML = delAnagram;
-  realAnagramTime();
-  w = 0;
-}*/

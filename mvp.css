@@ -8,7 +8,6 @@ div.a {
   transform: translate(-50%, -50%);
   width: 100%;
   overflow-wrap: break-word;
-
 }
 
 div.b {
@@ -40,14 +39,54 @@ div.c {
 }
 
 div.d {
-/*  font-size: 300%;*/
+/*  font-size: 300%; */
+/*  transform-origin:  50px 50px;
+  transform: translate(2,1); */
+  animation: mymove 4s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
-  top: 85%;
+/*  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 100%;*/
+  overflow-wrap: break-word;
+}
+
+@keyframes mymove {
+  0% {
+    top: 50%;
+    left: 50%
+  }
+  100% {
+    top: 80%;
+    left: 80%;
+  }
+}
+
+@keyframes tweetmove {
+  0% {
+    top: 50%;
+    left: 50%
+  }
+  100% {
+    top: 80%;
+    left: 20%;
+  }
+}
+
+div.d2 {
+/*  font-size: 300%; */
+/*  transform-origin:  50px 50px;
+  transform: translate(2,1); */
+  animation: tweetmove 3s forwards;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  text-align: center;
+  position: fixed;
+/*  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;*/
   overflow-wrap: break-word;
 }
 
