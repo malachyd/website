@@ -10,6 +10,19 @@ div.a {
   overflow-wrap: break-word;
 }
 
+div.e {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
+  line-height: calc(1.2em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  overflow-wrap: break-word;
+}
+
 div.b {
   font-family: 'IBM Plex Mono', monospace;
   /*font-size: 400%;*/
@@ -71,18 +84,18 @@ div.d {
   }
   100% {
     top: 80%;
-    left: 20%;
+    left: 13%;
   }
 }
 
 @keyframes mailmove {
   0% {
     top: 50%;
-    left: 50%
+    left: 48%
   }
   100% {
     top: 70%;
-    left: 50%;
+    left: 48%;
   }
 }
 
@@ -93,7 +106,7 @@ div.d {
   }
   100% {
     top: 10%;
-    left: 20%;
+    left: 13%;
   }
 }
 @keyframes lightmove {
@@ -168,14 +181,16 @@ div.d4 {
 }
 
 
-div.weird{
+/*div.weird{
+  height: inherit;
+  width: inherit;
   font-family:'Varela Round', sans-serif;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   color: rgba(214, 211, 211, 1);
-/*  font-size: 400%;*/
+  font-size: 400%;
   top: 75%;
   left: 80%;
   width: 80%;
   position: fixed;
   transform: translate(-10%, -5%);
-}
+}*/

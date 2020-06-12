@@ -19,6 +19,8 @@ var hello = 'welcome to';
 var boomemoji = "💥";
 var counter = 0;
 var twitter_bird = "🐦";
+var gmail = 'malachyd331@gmail.com';
+var m = 0;
 
 function mainName (){
   if (z < first.length) {
@@ -160,5 +162,18 @@ first = anagrams[0];
     document.getElementById("clicktime").innerHTML += first.charAt(w);
     w++;
     setTimeout(realAnagramTime, 30);
+  }
+}
+
+function email_time(){
+  document.getElementById("clicktime").innerHTML = '';
+  goemail();
+}
+
+function goemail(){
+  if (m < gmail.length) {
+    document.getElementById("clicktime").innerHTML += gmail.charAt(m);
+    m++;
+    setTimeout(goemail, speed3);
   }
 }
