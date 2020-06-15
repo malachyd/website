@@ -55,7 +55,7 @@ div.d {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
   transform: translate(2,1); */
-  animation: mymove 4s forwards;
+  animation: mymove 2s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
@@ -124,7 +124,7 @@ div.d2 {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
   transform: translate(2,1); */
-  animation: tweetmove 3s forwards;
+  animation: tweetmove 2s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
@@ -139,7 +139,7 @@ div.d3 {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
   transform: translate(2,1); */
-  animation: mailmove 3s forwards;
+  animation: mailmove 2s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
@@ -154,7 +154,7 @@ div.linked {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
   transform: translate(2,1); */
-  animation: linkedinmove 3s forwards;
+  animation: linkedinmove 2s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
@@ -169,7 +169,7 @@ div.d4 {
 /*  font-size: 300%; */
 /*  transform-origin:  50px 50px;
   transform: translate(2,1); */
-  animation: lightmove 3s forwards;
+  animation: lightmove 2s forwards;
   font-size: calc(47px + (60 - 47) * ((100vw - 200px) / (1600 - 300)));
   text-align: center;
   position: fixed;
